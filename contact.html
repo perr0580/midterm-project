@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+
+
+<body>
+
+     <!-- SKIP LINK -->
+    <a href="#main-content">Skip to main content</a>
+
+
+    <!-- HEADER -->
+    <header>
+
+        <!-- Personal branding / name -->
+        <div>
+            <!-- name or personal logo -->
+        </div>
+
+        <!-- Main navigation -->
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="behind-the-scenes.html">Behind the Scenes / Blog</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content">
+
+    <!-- CONTACT FORM -->
+<section aria-labelledby="contact-form-heading">
+
+    <h2 id="contact-form-heading">Contact Me</h2>
+
+    <!-- POST is the best method as it doesn't place submitted form values directly into the URL which GET does. This is important as the contact form collects personal information (names, email addresses, and messages.) -->
+    <form method="post">
+
+        <!-- NAME -->
+        <div>
+            <label for="name">Your name</label>
+            <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                required>
+        </div>
+
+        <!-- EMAIL -->
+        <div>
+            <label for="email">Email Address</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required>
+        </div>
+
+        <!-- SUBJECT -->
+        <div>
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="project-inquiry">Project Inquiry</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="other">Other</option>
+            
+            </select>
+        </div>
+
+
+        <!-- MESSAGE -->
+        <div>
+            <label for="message">Message</label>
+
+            <textarea 
+                id="message" 
+                name="message" 
+                rows="6" 
+                required></textarea>
+        </div>
+
+        <!-- PREFERRED CONTACT METHOD -->
+        <fieldset>
+            <legend>Preferred Contact Method</legend>
+
+            <div>
+                <input
+                    type="radio"
+                    id="contact-email"
+                    name="contact-method"
+                    value="email">
+                <label for="contact-email">Email</label>
+            </div>
+
+            <div>
+                <input
+                    type="radio"
+                    id="contact-phone"
+                    name="contact-method"
+                    value="phone">
+                <label for="contact-phone">Phone</label>
+            </div>
+
+            <div>
+                <input
+                    type="radio"
+                    id="contact-either"
+                    name="contact-method"
+                    value="either">
+                <label for="contact-either">Either</label>
+            </div>
+
+        </fieldset>
+
+        <!-- SUBMIT BUTTON -->
+        <button type="submit">Send Message</button>
+
+    </form>
+</section>
+
+<!-- CONTACT INQUIRY GUIDE -->
+<section aria-labelledby="inquiry-guide-heading">
+
+    <h2 id="inquiry-guide-heading">Contact Inquiry Guide</h2>
+
+    <table>
+        <!-- TABLE CAPTION -->
+        <caption>Examples of inquiries and information visitors can include</caption>
+
+        <!-- TABLE HEADER -->
+        <thead>
+            <tr>
+                <th scope="col">Inquiry Type</th>
+                <th scope="col">Examples</th>
+                <th scope="col">Suggested Information</th>
+            </tr>
+        </thead>
+
+        <!-- TABLE BODY -->
+        <tbody>
+            <tr>
+                <th scope="row">General Inquiry</th>
+                <td>Questions about my work, experience, or portfolio</td>
+                <td>A brief explanation of what you would like to know</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Project Inquiry</th>
+                <td>Video production, broadcasting, or multimedia projects</td>
+                <td>Project goals, requirements, and timeline</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Collaboration</th>
+                <td>Creative partnerships or joint projects</td>
+                <td>Collaboration ideas and interests</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Other</th>
+                <td>Any inquiry that does not fit the categories above</td>
+                <td>A brief explanation of your inquiry</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            Please provide as much relevant information
+                            as possible so I can better understand your inquiry.
+                        </td>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <!-- Footer navigation -->
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="behind-the-scenes.html">Behind the Scenes / Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- Social media links -->
+        <section aria-label="Social media links">
+            <!-- LinkedIn -->
+            <!-- Instagram -->
+            <!-- Other professional accounts -->
+        </section>
+
+
+        <!-- Copyright information -->
+        <p></p>
+
+    </footer>
+
+</body>
+</html>
